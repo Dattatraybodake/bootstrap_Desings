@@ -1,0 +1,225 @@
+
+.main-header
+{
+    width: 100%;
+    min-height: 60px;
+}
+.main-header .logo
+{
+    /* width: 50%; */
+    background-color: aquamarine;
+}
+.logo h2
+{
+    color: navy;
+    padding: 5px;
+}
+.main-header .menu
+{
+    /* width: 50%; */
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+}
+.menu ul
+{
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.menu ul li
+{
+    display: inline-block;
+    padding-top: 10px;
+}
+.menu ul li a{
+    color: darkgreen;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px; 
+}
+.slider
+{
+    width: 100%;
+}
+.slider video
+{
+    width: 100%;
+    margin-top: 5px;
+}
+.main-con
+{
+    width: 100%;
+    min-height: 400px;
+    margin-top: 5px;
+}
+.main-con .sidebar
+{
+    background-color:lightseagreen;
+    /* height: 200px; */
+}
+.sidebar p{
+    color: darkblue;
+}
+.main-con .content
+{
+    background-color: lightgray;
+}
+.content .que h4
+{
+    padding: 10px;
+}
+.content .ans p
+{
+    padding: 10px;
+    text-align: justify;
+    text-transform: capitalize;
+}
+.prod img
+{
+    position: relative;
+}
+.prod .order a
+{
+    position: absolute;
+    color: black;
+    z-index: 1;
+    margin-left: 122px;
+    padding-left: 10px;
+    text-decoration: none;
+    text-transform: capitalize;
+    width: 100px;
+    height: 30px;
+    margin-top: 2px;
+    background-color: aquamarine;
+    border: 0;
+    outline: 0;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    animation-name: anni2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+}
+.prod .offer h6
+{
+    position: absolute;
+    color: white;
+    z-index: 1;
+    margin-top: 200px;
+    margin-left: 5px;
+    animation-name: ordoff;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+   
+}
+.footer
+{
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 3px;
+    background-color: aquamarine;
+    text-align: center;
+}
+.footer h4
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+@keyframes ordoff {
+    30%
+    {
+        color: palegoldenrod;
+        transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+        -moz-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        -o-transform: translateY(-10px);
+}
+    60%
+    {
+        color: lightgreen;
+        transform: translateX(10px);
+        -webkit-transform: translateX(10px);
+        -moz-transform: translateX(10px);
+        -ms-transform: translateX(10px);
+        -o-transform: translateX(10px);
+}
+    90%
+    {
+        color: yellow;
+    }
+    100%
+    {
+        color: white;
+    }
+}
+
+@keyframes anni2
+{
+    25%
+    {
+      background-color:yellow;
+      color:white;
+      transform: translateX(-5px);
+      -webkit-transform: translateX(-5px);
+      -moz-transform: translateX(-5px);
+      -ms-transform: translateX(-5px);
+      -o-transform: translateX(-5px);
+}
+    50%
+    {
+        background-color: purple;
+        color: white;
+        transform: translateX(-10px);
+        -webkit-transform: translateX(-10px);
+        -moz-transform: translateX(-10px);
+        -ms-transform: translateX(-10px);
+        -o-transform: translateX(-10px);
+}
+    75%
+    {
+        color: White;
+        background-color: blue;
+        transform: translateX(-5 px);
+        -webkit-transform: translateX(-5 px);
+        -moz-transform: translateX(-5 px);
+        -ms-transform: translateX(-5 px);
+        -o-transform: translateX(-5 px);
+}
+    100%
+    {
+        color: black;
+        background-color: aquamarine;
+        transform:translateX(0px);
+        -moz-transform:translateX(0px);
+        -ms-transform:translateX(0px);
+        -o-transform:translateX(0px);
+        -webkit-transform:translateX(0px);
+}
+
+}
+
+@media only screen and (max-width:768px)
+{
+    .menu ul{
+        padding: 0;
+        flex-direction: column;
+    }
+    .prod img{
+        margin-top: 5px;
+    }  
+    .prod .order a
+    {
+        margin-left: 216px;
+        margin-top: 10px;
+    }
+    .prod .offer h6
+    {
+        margin-top: 300px;
+    }
+}
