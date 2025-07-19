@@ -1,0 +1,59 @@
+   * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+   }
+
+   .conatainer-fluid {
+       width: 100%;
+       border: 2px solid black;
+       border-radius: 10px;
+       -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+       -ms-border-radius: 10px;
+       -o-border-radius: 10px;
+   }  
+   h1,p,a
+   {
+    font-family: "Tagesschrift", system-ui;
+  font-weight: 400;
+  font-style: normal;
+   }  
+
+   .text-primary {
+       color: #81c408 !important;
+   }
+   
+   .product-name
+   {
+    text-decoration: none;
+    color: black;
+    size: 22px;
+   }
+
+   a
+   {
+    font-size: 32px;
+    font-weight: bolder;
+   }
+   .border-secondary {
+       border-color: #ffb524 !important;
+   }
+
+   .btn {
+       font-weight: 600;
+       transition: .5s; 
+   }
+
+   .btn.border-secondary:hover {
+       background: rgb(255,      181, 36) !important;
+       color: #fff !important;
+   }
+   img
+   {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
